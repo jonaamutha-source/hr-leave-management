@@ -1,4 +1,4 @@
-# HR Employee Leave Management Tool
+# Employee Leave Tracker
 
 A React-based web application for managing employee leave requests.
 
