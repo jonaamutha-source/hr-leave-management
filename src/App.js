@@ -1,3 +1,4 @@
+import "./App.css";
 import { useState } from "react";
 import LeaveForm from "./components/LeaveForm";
 import LeaveHistory from "./components/LeaveHistory";
@@ -18,11 +19,12 @@ function App() {
   leave.employee.toLowerCase().includes(search.toLowerCase())
 );
   return (
-    <div>
-      <h1>HR Employee Leave Management Tool</h1>
+    <div className="container">
+      <h1>Employee Leave Tracker</h1>
       <LeaveForm addLeave={addLeave} />
       <hr />
       <input
+        className="search-box"
         type="text"
         placeholder="Search Employee"
         value={search}
